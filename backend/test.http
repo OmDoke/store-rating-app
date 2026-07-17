@@ -1,0 +1,23 @@
+### Auth - Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Onkar Rajendra Doke",
+  "email": "onkardoke9696@gmail.com",
+  "address": "karve nage, Pune 411052",
+  "password": "Pass@1234567"
+}
+
+### Auth - Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "onkardoke9696@gmail.com",
+  "password": "Pass@1234567"
+}
+
+### Admin - Dashboard
+GET http://localhost:5000/api/admin/dashboard
+Authorization: Bearer YOUR_TOKEN_HERE
